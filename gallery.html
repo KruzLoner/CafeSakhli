@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakhli | Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f7f7f7 60%, #e9e4f0 100%);
+        }
+        .gallery-header {
+            text-align: center;
+            margin: 2.5rem 0 2rem 0;
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        .gallery-masonry {
+            column-count: 4;
+            column-gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem auto;
+            padding: 0 1rem;
+        }
+        .gallery-card {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+            background: #fff;
+            overflow: hidden;
+            transition: transform 0.18s, box-shadow 0.18s;
+            cursor: pointer;
+            opacity: 0;
+            animation: fadeIn 0.7s forwards;
+            position: relative;
+        }
+        .gallery-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .gallery-img {
+            width: 100%;
+            display: block;
+            border-radius: 0;
+            object-fit: cover;
+            /* aspect-ratio: 4/3; */ /* Remove this to allow natural heights */
+            transition: filter 0.2s;
+        }
+        .gallery-card:hover .gallery-img {
+            filter: brightness(0.93) contrast(1.10);
+        }
+        .gallery-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(30,30,30,0.18);
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+        .gallery-card:hover .gallery-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .gallery-zoom-icon {
+            color: #fff;
+            font-size: 2.2rem;
+            background: rgba(0,0,0,0.32);
+            border-radius: 50%;
+            padding: 0.5rem 0.7rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        /* Responsive columns */
+        @media (max-width: 1200px) {
+            .gallery-masonry { column-count: 3; }
+        }
+        @media (max-width: 900px) {
+            .gallery-masonry { column-count: 2; }
+            .gallery-card.tall .gallery-img {
+                min-height: 220px;
+                height: 220px;
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery-masonry { column-count: 2; column-gap: 0.5rem; padding: 0 0.1rem; }
+            .gallery-header { font-size: 1.1rem; }
+            .gallery-card { margin-bottom: 0.5rem; border-radius: 10px; }
+            .gallery-img { 
+                width: 100%; 
+                max-width: 100%; 
+                height: auto; 
+                display: block; 
+                border-radius: 0; 
+            }
+            .gallery-card.tall .gallery-img {
+                max-height: 260px;
+            }
+        }
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0; top: 0; width: 100vw; height: 100vh;
+            background: rgba(10,10,10,0.97);
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: lightboxFadeIn 0.4s;
+        }
+        .lightbox.open { display: flex; }
+        .lightbox-img {
+            max-width: 94vw;
+            max-height: 80vh;
+            border-radius: 18px;
+            box-shadow: 0 8px 48px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+            background: #fff;
+            border: 3px solid #fff;
+            animation: fadeIn 0.5s;
+        }
+        .lightbox-close, .lightbox-prev, .lightbox-next {
+            position: absolute;
+            top: 2.5rem;
+            color: #fff;
+            background: rgba(0,0,0,0.3);
+            border: none;
+            font-size: 2.5rem;
+            border-radius: 50%;
+            width: 56px; height: 56px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+        }
+        .lightbox-close { right: 2.5rem; }
+        .lightbox-prev { left: 2.5rem; }
+        .lightbox-next { right: 2.5rem; top: 7.5rem; }
+        .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover {
+            background: rgba(0,0,0,0.6);
+            transform: scale(1.08);
+        }
+        @keyframes lightboxFadeIn {
+            from { opacity: 0; } to { opacity: 1; }
+        }
+        @media (max-width: 600px) {
+            .lightbox-close, .lightbox-prev, .lightbox-next {
+                top: 1rem;
+                width: 40px; height: 40px;
+                font-size: 1.6rem;
+            }
+            .lightbox-next { top: 4.5rem; }
+        }
+        .gallery-card.tall .gallery-img {
+            min-height: 420px;
+            height: 420px;
+            object-fit: cover;
+        }
+        @media (max-width: 900px) {
+            .gallery-card.tall .gallery-img {
+                min-height: 300px;
+                height: 300px;
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery-card.tall .gallery-img {
+                min-height: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Sakhli Cafe Logo" class="logo-img">
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="gallery-header">Gallery</h1>
+        <div class="gallery-masonry" id="gallery-masonry">
+            <div class="gallery-card"><img src="galleryimages/1.jpg" alt="Gallery Image 1" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card tall"><img src="galleryimages/2.jpg" alt="Gallery Image 2" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/3.jpg" alt="Gallery Image 3" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/4.jpg" alt="Gallery Image 4" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card tall"><img src="galleryimages/5.jpg" alt="Gallery Image 5" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/6.jpg" alt="Gallery Image 6" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card tall"><img src="galleryimages/7.jpg" alt="Gallery Image 7" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/8.jpg" alt="Gallery Image 8" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/9.jpg" alt="Gallery Image 9" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card tall"><img src="galleryimages/10.jpg" alt="Gallery Image 10" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/11.jpg" alt="Gallery Image 11" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/12.jpg" alt="Gallery Image 12" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/13.jpg" alt="Gallery Image 13" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card tall"><img src="galleryimages/14.jpg" alt="Gallery Image 14" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+            <div class="gallery-card"><img src="galleryimages/15.jpg" alt="Gallery Image 15" class="gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus gallery-zoom-icon"></i></div></div>
+           
+        </div>
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <img src="" alt="Large Gallery" class="lightbox-img" id="lightbox-img">
+            <button class="lightbox-next" id="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

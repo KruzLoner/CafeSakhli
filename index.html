@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakhli | Georgian Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        !function(n,t,i){function e(){n.__ik_init||(n.__ik_init=!0,c())}function c(){o("https://inkindscript.com/modal.js")}function o(n){var e=t.createElement(i),c=t.getElementsByTagName(i)[0];e.async=!0,e.src=n,c.parentNode.insertBefore(e,c)}e()}(window,document,"script");
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Sakhli Cafe Logo" class="logo-img">
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Sakhli</h1>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="appetizers-and-salads">Appetizers & Salads</button>
+                <button class="category-btn" data-category="pastry">Pastry</button>
+                <button class="category-btn" data-category="dinner">Dinner</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Menu items will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About</h2>
+            <p>Experience the authentic taste of Georgia in the heart of the city. Our traditional recipes and warm atmosphere will make you feel at home. Every dish tells a story of our rich culinary heritage, prepared with the finest ingredients and served with genuine hospitality.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(646) 375-2001</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>sakhlicafe@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>6321 20th Avenue<br>Brooklyn, NY 11204</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-copyright">© 2024 Sakhli. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
