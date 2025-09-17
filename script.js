@@ -7,7 +7,8 @@ const menuItems = [
         category: "appetizers-and-salads",
         price: "14",
         description: "Tomatoes & cucumber with fresh herbs",
-        image: "menuimages/SaladNoWalnut.JPG"
+        image: "menuimages/SaladNoWalnut.JPG",
+        status: true
     },
     {
         id: 2,
@@ -15,15 +16,17 @@ const menuItems = [
         category: "appetizers-and-salads",
         price: "15",
         description: "Tomatoes & cucumber with fresh herbs, Georgian spices and walnuts",
-        image: "menuimages/SaladWithWalnut.JPG"
+        image: "menuimages/SaladWithWalnut.JPG",
+        status: true
     },
     {
         id: 3,
         name: "Ajapsandali",
         category: "appetizers-and-salads",
-        price: "15",
+        price: "16",
         description: "Roasted vegetable ragout with eggplant, tomato, bell pepper seasoned with garlic, basil, coriander leaves, parsley and Georgian spices",
-        image: "menuimages/Ajapsandali.jpg"
+        image: "menuimages/Ajapsandali.jpg",
+        status: true
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ const menuItems = [
         category: "appetizers-and-salads",
         price: "17",
         description: "Green salad made with chicken fillet, cherry tomato, romaine lettuce, croutons and a dressing that includes lemon, oil, eggs, Worcestershire sauce, anchovies, garlic",
-        image: "menuimages/Cezari.JPG"
+        image: "menuimages/Cezari.JPG",
+        status: true
     },
     {
         id: 5,
@@ -39,23 +43,26 @@ const menuItems = [
         category: "appetizers-and-salads",
         price: "20",
         description: "Selection of traditional Georgian cheeses",
-        image: "menuimages/GeorgianCheesePlatter.jpg"
+        image: "menuimages/GeorgianCheesePlatter.jpg",
+        status: true
     },
     {
         id: 6,
         name: "Eggplant Rolls",
         category: "appetizers-and-salads",
-        price: "14",
+        price: "17",
         description: "Eggplant with walnut fenugreek garlic paste and fresh pomegranate",
-        image: "menuimages/EggplantRolls.jpg"
+        image: "menuimages/EggplantRolls.jpg",
+        status: true
     },
     {
         id: 7,
         name: "Gebzhali",
         category: "appetizers-and-salads",
-        price: "18",
+        price: "19",
         description: "Made with milk, spices and mint leaves, the newly boiled cheese is mixed with mints and cut as the cheese rolls",
-        image: "menuimages/Gebzhalia.jpg"
+        image: "menuimages/Gebzhalia.jpg",
+        status: true
     },
     {
         id: 8,
@@ -63,7 +70,8 @@ const menuItems = [
         category: "appetizers-and-salads",
         price: "19",
         description: "Spinach, beet leaves, and eggplant roll served with corn bread",
-        image: "menuimages/MkhaliTrio.jpg"
+        image: "menuimages/MkhaliTrio.jpg",
+        status: true
     },
     {
         id: 9,
@@ -71,7 +79,8 @@ const menuItems = [
         category: "appetizers-and-salads",
         price: "14",
         description: "Green pepper, Cabbage, cucumber and Jonjoli",
-        image: "menuimages/MjavisAsorti.JPG"
+        image: "menuimages/MjavisAsorti.JPG",
+        status: true
     },
 
     // PASTRY
@@ -81,7 +90,8 @@ const menuItems = [
         category: "pastry",
         price: "16",
         description: "Oven baked boat shaped pie with blended cheese and egg",
-        image: "menuimages/AdjaruliKhachapuri.jpg"
+        image: "menuimages/AdjaruliKhachapuri.jpg",
+        status: true
     },
     {
         id: 11,
@@ -89,7 +99,8 @@ const menuItems = [
         category: "pastry",
         price: "15",
         description: "Oven baked hand rolled dough filled with cheese, glazed with melted butter",
-        image: "menuimages/ImeruliKhachapuri.jpg"
+        image: "menuimages/ImeruliKhachapuri.jpg",
+        status: true
     },
     {
         id: 12,
@@ -97,15 +108,17 @@ const menuItems = [
         category: "pastry",
         price: "14",
         description: "Romano beans with Georgian spices, baked in dough",
-        image: "menuimages/Lobiani.jpg"
+        image: "menuimages/Lobiani.jpg",
+        status: true
     },
     {
         id: 13,
         name: "Chakhrakina",
         category: "pastry",
-        price: "15",
+        price: "16",
         description: "Oven baked hand rolled dough filled with cheese, Beet leaves, Green onion, Dill",
         image: "menuimages/Chakhrakina.jpg",
+        status: true
     },
     {
         id: 14,
@@ -113,15 +126,17 @@ const menuItems = [
         category: "pastry",
         price: "17",
         description: "Traditional Georgian cheese bread",
-        image: "menuimages/MegruliKhachapuri.jpg"
+        image: "menuimages/MegruliKhachapuri.jpg",
+        status: true
     },
     {
         id: 15,
         name: "Traditional Georgian Corn Bread",
         category: "pastry",
-        price: "3",
+        price: "3,5",
         description: "Freshly baked Georgian corn bread",
-        image: "menuimages/Mchadi.webp"
+        image: "menuimages/Mchadi.webp",
+        status: true
     },
     {
         id: 16,
@@ -129,23 +144,26 @@ const menuItems = [
         category: "pastry",
         price: "4",
         description: "Traditional Georgian bread",
-        image: "menuimages/GeorgianBread.jpeg"
+        image: "menuimages/GeorgianBread.jpeg",
+        status: true
     },
     {
         id: 17,
         name: "Phenovani Khachapuri",
         category: "pastry",
-        price: "7",
+        price: "8",
         description: "Oven Baked Puff dough Filled with Cheese",
-        image: "menuimages/phenovanikhachapuri.jpg"
+        image: "menuimages/phenovanikhachapuri.jpg",
+        status: true
     },
     {
         id: 18,
         name: "Phenovani Lobiani",
         category: "pastry",
-        price: "6",
+        price: "7",
         description: "Oven baked puff dough filled with Romano beans and Georgian Spices",
-        image: "menuimages/PhenovaniLobiani.jpg"
+        image: "menuimages/PhenovaniLobiani.jpg",
+        status: true
     },
 
     // DINNER
@@ -155,7 +173,8 @@ const menuItems = [
         category: "dinner",
         price: "14",
         description: "Traditional Georgian chicken Soup with Coriander, vinegar, garlic and Lemon",
-        image: "menuimages/Chikhirtma.jpg"
+        image: "menuimages/Chikhirtma.jpg",
+        status: true
     },
     {
         id: 20,
@@ -163,7 +182,8 @@ const menuItems = [
         category: "dinner",
         price: "21",
         description: "Slow cooked veal with tarragon, sour plum, scallions, parsley, cilantro and white wine, served with Georgian Bread",
-        image: "menuimages/Chakapuli.jpeg"  
+        image: "menuimages/Chakapuli.jpeg",
+        status: false
     },
     {
         id: 21,
@@ -171,7 +191,8 @@ const menuItems = [
         category: "dinner",
         price: "21",
         description: "Traditional Georgian Soup containing Beef, rice, Herbs, onion and pepper",
-        image: "menuimages/Kharcho.JPG"
+        image: "menuimages/Kharcho.JPG",
+        status: true
     },
     {
         id: 22,
@@ -179,7 +200,8 @@ const menuItems = [
         category: "dinner",
         price: "18",
         description: "Romano beans cooked with traditional spices, served with assorted pickles and cornbread",
-        image: "menuimages/LobioinClayPot.jpg"
+        image: "menuimages/LobioinClayPot.jpg",
+        status: true
     },
     {
         id: 23,
@@ -187,7 +209,8 @@ const menuItems = [
         category: "dinner",
         price: "20",
         description: "Slow cooked beef, spicy pepper, tomato sauce, cooked herbs, Served with Georgian bread",
-        image: "menuimages/chashushuli.jpg"
+        image: "menuimages/chashushuli.jpg",
+        status: true
     },
     {
         id: 24,
@@ -195,7 +218,8 @@ const menuItems = [
         category: "dinner",
         price: "18",
         description: "Cooked Beef Liver, lung, heart onion, with traditional spices served with fresh Pomegranate and corn ball",
-        image: "menuimages/Kuchmachi.jpg"
+        image: "menuimages/Kuchmachi.jpg",
+        status: true
     },
     {
         id: 25,
@@ -204,6 +228,7 @@ const menuItems = [
         price: "18",
         description: "Type of Georgian Sausage, made from Ground pork and beef, intestines, onions and pepper, served with Pomegranate",
         image: "menuimages/Kupat.jpg",
+        status: true
     },
     {
         id: 26,
@@ -211,7 +236,8 @@ const menuItems = [
         category: "dinner",
         price: "16",
         description: "Seasoned Pork marinaded with white wine, served with Plum Sauce (Tkemali)",
-        image: "menuimages/PorkMtsvadi.jpg"
+        image: "menuimages/PorkMtsvadi.jpg",
+        status: true
     },
     {
         id: 27,
@@ -219,7 +245,8 @@ const menuItems = [
         category: "dinner",
         price: "18",
         description: "Veal meat marinaded with white wine, served with Plum Sauce (Tkemali)",
-        image: "menuimages/VealMstvadi.jpg"
+        // image: "menuimages/VealMstvadi.jpg",
+        status: false
     },
     {
         id: 28,
@@ -227,7 +254,8 @@ const menuItems = [
         category: "dinner",
         price: "15",
         description: "Marinaded Chicken, served with Plumb Sauce (Tkemali)",
-        image: "menuimages/ChickenMtsvadi.jpg"
+        image: "menuimages/ChickenMtsvadi.jpg",
+        status: true
     },
     {
         id: 29,
@@ -235,21 +263,24 @@ const menuItems = [
         category: "dinner",
         price: "17",
         description: "Served with Blueberry, Blackberry and roseberry sauce",
-        image: "menuimages/YoungChicken.jpg"
+        image: "menuimages/YoungChicken.jpg",
+        status: true
     },
     {
         id: 30,
         name: "Mushroom and Cheese",
         category: "dinner",
         price: "16",
-        description: "Button mushrooms baked with sulguni cheese butter, in clay pot"
+        description: "Button mushrooms baked with sulguni cheese butter, in clay pot",
+        status: true
     },
     {
         id: 31,
         name: "Chicken in Baje Sauce",
         category: "dinner",
         price: "17",
-        description: "Roasted chicken in walnuts sauce"
+        description: "Roasted chicken in walnuts sauce",
+        status: true
     },
     {
         id: 32,
@@ -258,6 +289,7 @@ const menuItems = [
         price: "18",
         description: "Homemade potato with roasted pork served with onion and pomegranate",
         image: "menuimages/Ojakhuri.jpg",
+        status: true
     },
     {
         id: 33,
@@ -266,6 +298,7 @@ const menuItems = [
         price: "18",
         description: "Traditional Georgian dumplings (6 pieces)",
         image: "menuimages/KhinkaliKalakuri.jpg",
+        status: true
     },
     {
         id: 34,
@@ -274,20 +307,23 @@ const menuItems = [
         price: "18",
         description: "Traditional Georgian dumplings (6 pieces)",
         image: "menuimages/KhinkaliMtiuluri.webp",
+        status: true
     },
     {
         id: 35,
         name: "Kvari",
         category: "dinner",
         price: "12",
-        description: "Megrelian Kvarabia are cakes with cheese, Serve with mint sauce"
+        description: "Megrelian Kvarabia are cakes with cheese, Serve with mint sauce",
+        status: true
     },
     {
         id: 36,
         name: "Megruli Kharcho with Beef",
         category: "dinner",
         price: "20",
-        description: "Beef stew in luscious walnut-packed gravy"
+        description: "Beef stew in luscious walnut-packed gravy",
+        status: true
     },
     {
         id: 37,
@@ -295,35 +331,40 @@ const menuItems = [
         category: "dinner",
         price: "14",
         description: "Traditional Georgian kebab",
-        image: "menuimages/ChickenKebab.jpg"
+        image: "menuimages/ChickenKebab.jpg",
+        status: true
     },
     {
         id: 38,
         name: "Pork and Beef Mix Kebab",
         category: "dinner",
         price: "19",
-        description: "Mixed meat kebab"
+        description: "Mixed meat kebab",
+        status: true
     },
     {
         id: 39,
         name: "Ghomi with Smoked Sulguni",
         category: "dinner",
         price: "17",
-        description: "Made from corn flour and topped with smoked cheese"
+        description: "Made from corn flour and topped with smoked cheese",
+        status: true
     },
     {
         id: 40,
         name: "Elarji",
         category: "dinner",
         price: "19",
-        description: "Thick, Elastic porridge, made from a blend of coarse corn flour and Cheese"
+        description: "Thick, Elastic porridge, made from a blend of coarse corn flour and Cheese",
+        status: true
     },
     {
         id: 41,
         name: "Shkmeruli",
         category: "dinner",
         price: "19",
-        description: "Chicken fried and then slowly simmered in a rich garlic and milk sauce"
+        description: "Shkmeruli is a traditional Georgian dish made with a chicken fried and then slowly simmered in a rich garlic and milk sauce",
+        status: true
     },
     {
         id: 42,
@@ -331,7 +372,8 @@ const menuItems = [
         category: "dinner",
         price: "13",
         description: "Grilled wrap filled with spiced chicken, fresh vegetables, and tangy sauce, garnished with pickled peppers and pomegranate seeds.",
-        image: "menuimages/ChickenShawarma.jpg"
+        image: "menuimages/ChickenShawarma.jpg",
+        status: true
     },
     {
         id: 43,
@@ -339,7 +381,40 @@ const menuItems = [
         category: "dinner",
         price: "15",
         description: "Marinated pork wrapped in lavash bread with lettuce, onion, dill, jalapeño, tomato, pickled cucumber, mixed cheese, and red and white sauces.",
-        image: "menuimages/porkshawarma.jpg"
+        image: "menuimages/porkshawarma.jpg",
+        status: true
+    },
+    {
+        id: 64,
+        name: "Salmon with Vegetables",
+        category: "dinner",
+        price: "25",
+        description: "Fresh Atlantic salmon grilled to perfection, served with seasonal roasted vegetables and herbs",
+        status: true
+    },
+    {
+        id: 65,
+        name: "Pork Meat Signature by Sakhli",
+        category: "dinner",
+        price: "25",
+        description: "Our signature pork dish prepared with traditional Georgian techniques and secret family spices",
+        status: true
+    },
+    {
+        id: 66,
+        name: "Lamb Chops",
+        category: "dinner",
+        price: "27",
+        description: "Tender lamb chops marinated in Georgian herbs and spices, grilled to your preference",
+        status: true
+    },
+    {
+        id: 67,
+        name: "Madame Bovary",
+        category: "dinner",
+        price: "24",
+        description: "An elegant dish inspired by French cuisine, featuring tender meat with rich sauce and fresh herbs",
+        status: true
     },
 
     // DESSERTS
@@ -349,42 +424,48 @@ const menuItems = [
         category: "desserts",
         price: "10",
         description: "Traditional layered honey cake",
-        image: "menuimages/HoneyCake.JPG"
+        image: "menuimages/HoneyCake.JPG",
+        status: true
     },
     {
         id: 45,
         name: "Ideal",
         category: "desserts",
         price: "11",
-        description: "Classic Georgian dessert"
+        description: "Classic Georgian dessert",
+        status: true
     },
     {
         id: 46,
         name: "Qada",
         category: "desserts",
         price: "4",
-        description: "Traditional Georgian sweet bread"
+        description: "Traditional Georgian sweet bread",
+        status: true
     },
     {
         id: 47,
         name: "Baklava",
         category: "desserts",
         price: "4.5",
-        description: "Sweet pastry made of layers of filo filled with chopped nuts and sweetened with syrup or honey"
+        description: "Sweet pastry made of layers of filo filled with chopped nuts and sweetened with syrup or honey",
+        status: true
     },
     {
         id: 48,
         name: "Napoleon",
         category: "desserts",
         price: "13",
-        description: "Classic layered puff pastry cake"
+        description: "Classic layered puff pastry cake",
+        status: true
     },
     {
         id: 49,
         name: "Pelamushi",
         category: "desserts",
         price: "6",
-        description: "Georgian dessert porridge commonly composed of a thick, hard chilled jelly made from grape juice and flour. Served with peeled nuts or gozinaki"
+        description: "Georgian dessert porridge commonly composed of a thick, hard chilled jelly made from grape juice and flour. Served with peeled nuts or gozinaki",
+        status: true
     },
     {
         id: 50,
@@ -392,7 +473,8 @@ const menuItems = [
         category: "desserts",
         price: "15",
         description: "Chef's special homemade dessert",
-        image: "menuimages/HomemadeDessert1.jpg"
+        image: "menuimages/HomemadeDessert1.jpg",
+        status: true
     },
     {
         id: 51,
@@ -400,7 +482,8 @@ const menuItems = [
         category: "desserts",
         price: "12",
         description: "Rich chocolate cake with pecans and chocolate ganache",
-        image: "menuimages/ChocolatePecanCake.jpg"
+        image: "menuimages/ChocolatePecanCake.jpg",
+        status: true
     },
 
     // DRINKS
@@ -409,84 +492,96 @@ const menuItems = [
         name: "Georgian Lemonade Tarragon",
         category: "drinks",
         price: "3.5",
-        description: "Traditional Georgian tarragon-flavored lemonade"
+        description: "Traditional Georgian tarragon-flavored lemonade",
+        status: true
     },
     {
         id: 53,
         name: "Georgian Lemonade Pear",
         category: "drinks",
         price: "3.5",
-        description: "Traditional Georgian pear-flavored lemonade"
+        description: "Traditional Georgian pear-flavored lemonade",
+        status: true
     },
     {
         id: 54,
         name: "Georgian Mineral Water (Nabeglavi)",
         category: "drinks",
         price: "3",
-        description: "Natural Georgian mineral water"
+        description: "Natural Georgian mineral water",
+        status: true
     },
     {
         id: 55,
         name: "Georgian Compot 1L",
         category: "drinks",
         price: "8",
-        description: "Traditional Georgian fruit compote"
+        description: "Traditional Georgian fruit compote",
+        status: true
     },
     {
         id: 56,
         name: "Spring Water",
         category: "drinks",
         price: "2.5",
-        description: "Fresh spring water"
+        description: "Fresh spring water",
+        status: true
     },
     {
         id: 57,
         name: "Coffee Americano",
         category: "drinks",
         price: "4",
-        description: "Classic Americano coffee"
+        description: "Classic Americano coffee",
+        status: true
     },
     {
         id: 58,
         name: "Coffee Latte",
         category: "drinks",
         price: "4.5",
-        description: "Espresso with steamed milk"
+        description: "Espresso with steamed milk",
+        status: true
     },
     {
         id: 59,
         name: "Coffee Cappuccino",
         category: "drinks",
         price: "5",
-        description: "Espresso with steamed milk and foam"
+        description: "Espresso with steamed milk and foam",
+        status: true
     },
     {
         id: 60,
         name: "Coffee Espresso",
         category: "drinks",
         price: "4",
-        description: "Strong Italian-style coffee"
+        description: "Strong Italian-style coffee",
+        status: true
     },
     {
         id: 61,
         name: "Fruit Tea",
         category: "drinks",
         price: "3.5",
-        description: "Selection of fruit-flavored teas"
+        description: "Selection of fruit-flavored teas",
+        status: true
     },
     {
         id: 62,
         name: "Black Tea",
         category: "drinks",
         price: "3",
-        description: "Traditional black tea"
+        description: "Traditional black tea",
+        status: true
     },
     {
         id: 63,
         name: "Turkish Coffee",
         category: "drinks",
         price: "4.5",
-        description: "Traditional Turkish-style coffee"
+        description: "Traditional Turkish-style coffee",
+        status: true
     }
 ];
 
@@ -496,19 +591,24 @@ const categoryButtons = document.querySelectorAll('.category-btn');
 
 // Function to create menu item card
 function createMenuItemCard(item) {
-    const imageHtml = item.image 
+    const imageHtml = item.image
         ? `<img src="${item.image}" alt="${item.name}">`
         : `<div class="placeholder-image">
             <span>${item.name}</span>
            </div>`;
-    
+
+    const statusClass = item.status ? '' : 'unavailable';
+    const statusBadge = item.status ? '' : '<div class="unavailable-badge">Not Available</div>';
+    const priceDisplay = item.status ? `$${item.price}` : 'N/A';
+
     return `
-        <div class="menu-item" data-category="${item.category}">
+        <div class="menu-item ${statusClass}" data-category="${item.category}">
             ${imageHtml}
+            ${statusBadge}
             <div class="menu-item-content">
                 <h3>${item.name}</h3>
                 <p>${item.description}</p>
-                <p class="price">$${item.price}</p>
+                <p class="price">${priceDisplay}</p>
             </div>
         </div>
     `;
@@ -516,13 +616,13 @@ function createMenuItemCard(item) {
 
 // Function to filter menu items with fade animation
 function filterMenuItems(category) {
-    const filteredItems = category === 'all' 
-        ? menuItems 
+    const filteredItems = category === 'all'
+        ? menuItems
         : menuItems.filter(item => item.category === category);
-    
+
     // Fade out current items
     menuGrid.style.opacity = '0';
-    
+
     setTimeout(() => {
         menuGrid.innerHTML = filteredItems.map(item => createMenuItemCard(item)).join('');
         // Fade in new items
@@ -545,7 +645,7 @@ categoryButtons.forEach(button => {
 // Initialize menu with all items
 document.addEventListener('DOMContentLoaded', () => {
     filterMenuItems('all');
-    
+
     // Add fade-in animation to menu items
     const menuItems = document.querySelectorAll('.menu-item');
     menuItems.forEach((item, index) => {
@@ -581,7 +681,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
-        
+
         if (sectionTop < windowHeight * 0.75) {
             section.style.opacity = '1';
             section.style.transform = 'translateY(0)';
@@ -615,4 +715,4 @@ if (menuToggle && navLinks) {
             navLinks.classList.remove('active');
         });
     });
-} 
+}

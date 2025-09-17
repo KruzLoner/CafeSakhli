@@ -350,6 +350,67 @@ nav {
     transform: translateY(-2px);
 }
 
+/* Unavailable menu item styling */
+.menu-item.unavailable {
+    opacity: 0.6;
+    filter: grayscale(0.8);
+    position: relative;
+}
+
+.menu-item.unavailable:hover {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item.unavailable::before {
+    display: none;
+}
+
+.menu-item.unavailable img {
+    filter: grayscale(0.8) brightness(0.8);
+}
+
+.menu-item.unavailable img:hover {
+    transform: none;
+}
+
+.unavailable-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(220, 53, 69, 0.9);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.menu-item.unavailable h3 {
+    color: #6a3a14;
+    opacity: 0.7;
+}
+
+.menu-item.unavailable p {
+    color: #6a3a14;
+    opacity: 0.6;
+}
+
+.menu-item.unavailable .price {
+    background: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+.menu-item.unavailable .price:hover {
+    background: rgba(220, 53, 69, 0.15);
+    transform: none;
+}
+
 /* Placeholder image styling */
 .placeholder-image {
     width: 100%;
@@ -813,17 +874,17 @@ footer {
         padding: 1rem;
         min-height: 120px;
     }
-    
+
     .menu-item h3 {
         font-size: 1rem;
         padding-right: 70px;
     }
-    
+
     .menu-item p {
         font-size: 0.9rem;
         padding-right: 70px;
     }
-    
+
     .menu-item .price {
         font-size: 0.9rem;
         padding: 0.3rem 0.8rem;
@@ -998,4 +1059,4 @@ html, body {
     margin-bottom: 3rem;
     text-transform: uppercase;
     color: var(--white);
-} 
+}
