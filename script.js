@@ -272,6 +272,7 @@ const menuItems = [
         category: "dinner",
         price: "16",
         description: "Button mushrooms baked with sulguni cheese butter, in clay pot",
+        image: "menuimages/Mushroomandcheese.jpeg",
         status: true
     },
     {
@@ -280,6 +281,7 @@ const menuItems = [
         category: "dinner",
         price: "17",
         description: "Roasted chicken in walnuts sauce",
+        image: "menuimages/Chickeninbaje.jpeg",
         status: true
     },
     {
@@ -323,6 +325,7 @@ const menuItems = [
         category: "dinner",
         price: "20",
         description: "Beef stew in luscious walnut-packed gravy",
+        image: "menuimages/MegruliKharcho.jpeg",
         status: true
     },
     {
@@ -340,6 +343,7 @@ const menuItems = [
         category: "dinner",
         price: "19",
         description: "Mixed meat kebab",
+        image: "menuimages/Kebab.jpeg",
         status: true
     },
     {
@@ -348,6 +352,7 @@ const menuItems = [
         category: "dinner",
         price: "17",
         description: "Made from corn flour and topped with smoked cheese",
+        image: "menuimages/Gomiandsulguni.jpeg",
         status: true
     },
     {
@@ -356,6 +361,7 @@ const menuItems = [
         category: "dinner",
         price: "19",
         description: "Thick, Elastic porridge, made from a blend of coarse corn flour and Cheese",
+        image: "menuimages/Elarji.jpeg",
         status: true
     },
     {
@@ -364,6 +370,7 @@ const menuItems = [
         category: "dinner",
         price: "19",
         description: "Shkmeruli is a traditional Georgian dish made with a chicken fried and then slowly simmered in a rich garlic and milk sauce",
+        image: "menuimages/Shkmeruli.jpeg",
         status: true
     },
     {
@@ -381,7 +388,7 @@ const menuItems = [
         category: "dinner",
         price: "15",
         description: "Marinated pork wrapped in lavash bread with lettuce, onion, dill, jalapeño, tomato, pickled cucumber, mixed cheese, and red and white sauces.",
-        image: "menuimages/porkshawarma.jpg",
+        image: "menuimages/ChickenShawarma.jpg",
         status: true
     },
     {
@@ -390,6 +397,7 @@ const menuItems = [
         category: "dinner",
         price: "25",
         description: "Fresh Atlantic salmon grilled to perfection, served with seasonal roasted vegetables and herbs",
+        image: "menuimages/Salmon.jpeg",
         status: true
     },
     {
@@ -398,6 +406,7 @@ const menuItems = [
         category: "dinner",
         price: "25",
         description: "Our signature pork dish prepared with traditional Georgian techniques and secret family spices",
+        image: "menuimages/Porksignature.jpeg",
         status: true
     },
     {
@@ -406,6 +415,7 @@ const menuItems = [
         category: "dinner",
         price: "27",
         description: "Tender lamb chops marinated in Georgian herbs and spices, grilled to your preference",
+        image: "menuimages/Lambchops.jpeg",
         status: true
     },
     {
@@ -414,6 +424,7 @@ const menuItems = [
         category: "dinner",
         price: "24",
         description: "An elegant dish inspired by French cuisine, featuring tender meat with rich sauce and fresh herbs",
+        image: "menuimages/Madambovary.jpeg",
         status: true
     },
 
@@ -473,7 +484,7 @@ const menuItems = [
         category: "desserts",
         price: "15",
         description: "Chef's special homemade dessert",
-        image: "menuimages/HomemadeDessert1.jpg",
+        image: "menuimages/HomemadeDessert.jpg",
         status: false
     },
     {
