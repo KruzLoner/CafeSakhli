@@ -315,7 +315,7 @@ const menuItems = [
         category: "dinner",
         price: "12",
         description: "Megrelian Kvarabia are cakes with cheese, Serve with mint sauce",
-        status: true
+        status: false
     },
     {
         id: 36,
@@ -433,7 +433,7 @@ const menuItems = [
         category: "desserts",
         price: "11",
         description: "Classic Georgian dessert",
-        status: true
+        status: false
     },
     {
         id: 46,
@@ -441,7 +441,7 @@ const menuItems = [
         category: "desserts",
         price: "4",
         description: "Traditional Georgian sweet bread",
-        status: true
+        status: false
     },
     {
         id: 47,
@@ -449,7 +449,7 @@ const menuItems = [
         category: "desserts",
         price: "4.5",
         description: "Sweet pastry made of layers of filo filled with chopped nuts and sweetened with syrup or honey",
-        status: true
+        status: false
     },
     {
         id: 48,
@@ -474,7 +474,7 @@ const menuItems = [
         price: "15",
         description: "Chef's special homemade dessert",
         image: "menuimages/HomemadeDessert1.jpg",
-        status: true
+        status: false
     },
     {
         id: 51,
