@@ -182,7 +182,7 @@ const menuItems = [
         category: "dinner",
         price: "21",
         description: "Slow cooked veal with tarragon, sour plum, scallions, parsley, cilantro and white wine, served with Georgian Bread",
-        image: "menuimages/Chakapuli.jpeg",
+        image: "menuimages/Kharcho.JPG",
         status: false
     },
     {
@@ -191,7 +191,7 @@ const menuItems = [
         category: "dinner",
         price: "21",
         description: "Traditional Georgian Soup containing Beef, rice, Herbs, onion and pepper",
-        image: "menuimages/Kharcho.JPG",
+        image: "menuimages/Chakapuli.jpeg",
         status: true
     },
     {
